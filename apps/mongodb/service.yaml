@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb
+spec:
+  type: NodePort
+  ports:
+    - port: 27017         # Porta do container
+      targetPort: 27017   # Porta exposta pelo serviço
+      nodePort: 30017     # Porta exposta externamente
+  selector:
+    app: mongodb
