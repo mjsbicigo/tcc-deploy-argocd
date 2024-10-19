@@ -17,9 +17,9 @@ spec:
         image: marciosbicigo/mybudget-backend-api:latest
         env:
         - name: MONGO_URI
-          value: "mongodb://mongodb:27017/"
+          value: "mongodb://svc-mongodb:27017/"
         - name: REDIS_URI
-          value: "redis://redis:6379"
+          value: "redis://svc-redis:6379"
         - name: SECRET_KEY
           value: "xLzLlIoTdEY8rBDgMuyM9WXDXcaoga/gAJfA0D1vF9E=internal"
         ports:

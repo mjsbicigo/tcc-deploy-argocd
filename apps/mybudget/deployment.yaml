@@ -17,11 +17,11 @@ spec:
         image: marciosbicigo/mybudget-frontend:latest
         env:
         - name: MONGO_URI
-          value: "mongodb://mongodb:27017/"
+          value: "mongodb://svc-mongodb:27017/"
         - name: SECRET_KEY
           value: "xLzLlIoTdEY8rBDgMuyM9WXDXcaoga/gAJfA0D1vF9E=internal"
         - name: API_URI
-          value: "http://mybudget-api:8081"
+          value: "http://svc-mybudget-api:8081"
         ports:
         - containerPort: 8080
         resources:
