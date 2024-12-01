@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mybudget
-        image: marciosbicigo/mybudget-frontend:35e1206
+        image: marciosbicigo/mybudget-frontend:latest
         env:
         - name: MONGO_URI
           value: "mongodb://svc-mongodb:27017/"
